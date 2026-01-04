@@ -55,5 +55,27 @@ button {
 }
 
 /* =========================
+    Common
+========================= */
+.container {
+  padding-inline: 30px;
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
     Header
 ========================= */
+.header {
+  padding: 1.5rem 2rem 1rem;
+}
+
+.header__logo {
+  width: 268px;
+  height: auto;
+  margin: 0 auto;
+}
