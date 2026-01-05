@@ -172,3 +172,25 @@ button {
     text-align: center;
   }
 }
+
+/* =========================
+    Main
+========================= */
+.hero-image--sp {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .hero-image--sp {
+    display: none;
+  }
+}
+
+.hero-image--pc {
+  display: none;
+}
+@media (min-width: 900px) {
+  .hero-image--pc {
+    display: block;
+    width: 100%;
+  }
+}

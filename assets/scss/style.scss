@@ -172,3 +172,21 @@ button {
     }
   }
 }
+
+/* =========================
+    Main
+========================= */
+
+.hero-image--sp{
+  width: 100%;
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+.hero-image--pc{
+  display: none;
+  @media (min-width: 900px) {
+    display: block;
+    width: 100%;
+  }
+}
