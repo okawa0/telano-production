@@ -193,16 +193,36 @@ button {
     width: 100%;
   }
 }
-.top-main .content__desc {
-  margin-top: 3rem;
+.top-main .content {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.top-main .content .content__desc {
   margin-bottom: 5rem;
 }
-.top-main .content__desc .content__title {
+.top-main .content .content__desc .content__title {
   font-size: 24px;
   margin-bottom: 2rem;
 }
-.top-main .content__desc .content__text {
+.top-main .content .content__desc .content__text {
   font-size: 13px;
+}
+.top-main .content .btn-wrapper {
+  text-align: center;
+}
+.top-main .content .btn-wrapper .list-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1ddb07;
+  color: #fff;
+  padding: 0.8rem 2rem 0.8rem 3rem;
+  border-radius: 0.8rem;
+  gap: 1rem;
+}
+.top-main .content .btn-wrapper .list-btn .list-button__text {
+  font-size: 13px;
+  font-weight: 700;
 }
 
 /* ---------- Staff list ---------- */
@@ -210,6 +230,7 @@ button {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 900px) {
   .staff-list {
