@@ -224,6 +224,25 @@ button {
   font-size: 13px;
   font-weight: 700;
 }
+.top-main .content .banners {
+  display: none;
+}
+@media (min-width: 900px) {
+  .top-main .content .banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 8rem;
+  }
+}
+.top-main .content .banners .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 219px;
+  height: 72px;
+  background-image: url(../images/banner-img.jpg);
+}
 
 /* ---------- Staff list ---------- */
 .staff-list {
