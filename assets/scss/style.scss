@@ -339,3 +339,47 @@ button {
 /* =========================
     スタッフ詳細ページ
 ========================= */
+.content__inner {
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 258px;
+    gap: 7rem;
+  }
+  .staff-list--detail {
+    display: block;
+    .staff-card__content--detail {
+      width: 100%;
+    }
+  }
+  .aside__link{
+    display: none;
+    @media (min-width: 900px) {
+      display: block;
+    }
+  .aside__title{
+    margin-bottom: 1rem;
+  }
+  .staff-box {
+    display: flex;
+    gap: 0.5rem;
+    padding-block: 1.2rem;
+      border-top: 1px dashed #727272;
+      &:last-child {
+        border-bottom: 1px dashed #727272;
+      }
+    .staff-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #f1f1f1;
+    }
+    .staff-name {
+      font-size: 13px;
+      display: block;
+    }
+    .staff-date {
+      font-size: 11px;
+    }
+  }
+}
+}
