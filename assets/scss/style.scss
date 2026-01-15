@@ -366,6 +366,52 @@ button {
       }
     }}
   }
+  .article{
+    &:not(:first-child){
+      margin-top: 3rem;
+    }
+    .article__title{
+      font-size: 16px;
+      @media (min-width:900px){
+        margin-bottom: 2rem;
+      }
+    }
+    .article__img{
+      border-radius: 20px;
+      width: 100%;
+      @media (min-width:900px){
+        width: 274px;
+        margin: 0 0 2rem 2rem;
+      }
+    }
+    .float-right{
+      float: none;
+      margin: 1.5rem auto;
+      @media (min-width:900px){
+        float: right;
+        margin: 0 0 2rem 2rem;
+      }
+    }
+    .float-left{
+      float: none;
+      margin:1.5rem auto;
+      @media (min-width:900px){
+        float: left;
+        margin: 0 2rem 2rem 0;
+      }
+    }
+    .article__text{
+      font-size: 13px;
+      line-height:26px;
+    }
+    .vertical-dots::after {
+  content: "•\A•\A•";
+  white-space: pre;
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+}
+  }
   .aside__link {
     display: none;
     @media (min-width: 900px) {
